@@ -1,0 +1,110 @@
+<div class="container">
+    <div class="row">
+    <div class="col-lg-4">
+    </div>
+    <div class="col-lg-4">
+  <h3 style='color: red'><strong>National Super Market</strong></h3>
+  </div>
+</div>
+  <div class="row">
+      <div class="col-lg-3">
+      </div>
+      <div class="col-lg-4">
+  <h5 style='color: green'> (Please Enter below given details)</h5>
+      </div>
+    </div>
+  <form [formGroup]="shop" (submit)="submitData()">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-lg-2">
+        </div>
+            <div class="col-lg-2">
+          <label for="">Categories</label>
+        </div>
+        <div class="col-lg-4">
+          <select class="browser-default custom-select" formControlName="categories" >
+            <option value= "" >Select any one</option>
+            <option value="Air Conditioner">AC</option>
+            <option value="Washing Machine">Washning Machine</option>
+            <option value="Television">Television </option>
+            <option value="Fridge">Fridge</option>
+            <option value="Iron Box">Iron Box</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+          <div class="col-lg-2">
+            </div>
+        <div class="col-lg-2">
+          <label for="">Brand Name</label>
+        </div>
+        <div class="col-lg-4">
+          <select class="browser-default custom-select" formControlName="brandname">
+            <option selected>Select any one </option>
+            <option value="samsung">Samsung</option>
+            <option value="whirlpool">Whirlpool</option>
+            <option value="onida">Onida</option>
+            <option value="Phillips">phillips</option>
+            <option value="Haier">Haier</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+          <div class="col-lg-2">
+            </div>
+        <div class="col-lg-2">
+          <label for="">Customer Name</label>
+        </div>
+        <div class="col-lg-4">
+          <input type="text" class="form-control" formControlName="items" placeholder="Enter Customer name" />
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+          <div class="col-lg-2">
+            </div>
+        <div class="col-lg-2">
+          <label for="">Quantity</label>
+        </div>
+        <div class="col-lg-4">
+          <input type="text" class="form-control" formControlName="quantity" placeholder="Number of quantity required"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+          <div class="col-lg-2">
+            </div>
+        <div class="col-lg-2">
+          <label for="">Price</label>
+        </div>
+        <div class="col-lg-4">
+          <input type="text" class="form-control" formControlName="price" placeholder="Enter the price amount"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+          <div class="col-lg-2">
+            </div>
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
